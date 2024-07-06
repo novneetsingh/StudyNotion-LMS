@@ -32,10 +32,10 @@ app.use(
 );
 
 // Route setup
-app.use("/api/v1/auth", userRoutes); // User authentication routes
-app.use("/api/v1/profile", profileRoutes); // User profile routes
-app.use("/api/v1/course", courseRoutes); // Course routes
-app.use("/api/v1/payment", paymentRoutes); // Payment routes
+app.use("/auth", userRoutes); // User authentication routes
+app.use("/profile", profileRoutes); // User profile routes
+app.use("/course", courseRoutes); // Course routes
+app.use("/payment", paymentRoutes); // Payment routes
 
 // Default route
 app.get("/", (req, res) => {
